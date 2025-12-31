@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ======================
     // TESTING FLAG - SET TO TRUE FOR IMMEDIATE TESTING
     // ======================
-    const TEST_MODE = true; // Set to true to test immediately, false for real countdown
+    const TEST_MODE = false; // Set to true to test immediately, false for real countdown
     
     // Initialize variables
     let celebrationTriggered = false;
