@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy New Year, My Love! ❤️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div id="fireworks-container"></div>
+    <div id="confetti-container"></div>
+    <div id="hearts-container"></div>
+    <div id="sparkles-container"></div>
+    
+    <!-- Celebration Overlay -->
+    <div class="celebration-overlay" id="celebration-overlay"></div>
+    
+    <!-- Celebration Message -->
+    <div class="celebration-message" id="celebration-message">
+        <div class="celebration-content">
+            <div class="celebration-emoji">🎊🎆🎇✨</div>
+            <h1 class="celebration-title">HAPPY NEW YEAR!</h1>
+            <div class="celebration-emoji">✨🎇🎆🎊</div>
+            <p class="celebration-text">A new chapter of our story begins now!</p>
+            <div class="celebration-stats">
+                <div class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Our Love: <strong>100%</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <span>Memories to Make: <strong>∞</strong></span>
+                </div>
+            </div>
+            <button class="celebration-btn" id="continue-btn">
+                <i class="fas fa-gift"></i> Reveal My Message
+            </button>
+        </div>
+    </div>
+    
+    <!-- New Year Resolution Popup -->
+    <div class="resolution-popup" id="resolution-popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2><i class="fas fa-scroll"></i> My New Year Resolutions For You</h2>
+                <button class="close-popup" id="close-resolution">×</button>
+            </div>
+            <div class="popup-body">
+                <div class="resolution-item">
+                    <i class="fas fa-heart-circle-check"></i>
+                    <span>Love you more every day</span>
+                </div>
+                <div class="resolution-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>Create beautiful memories together</span>
+                </div>
+                <div class="resolution-item">
+                    <i class="fas fa-compass"></i>
+                    <span>Go on adventures and explore new places</span>
+                </div>
+                <div class="resolution-item">
+                    <i class="fas fa-laugh-beam"></i>
+                    <span>Laugh together every single day</span>
+                </div>
+                <div class="resolution-item">
+                    <i class="fas fa-users"></i>
+                    <span>Support each other when we are low</span>
+                </div>
+                <div class="resolution-item">
+                    <i class="fas fa-users"></i>
+                    <span>Should not make you hurt</span>
+                </div>
+                <div class="resolution-item">
+                    <i class="fas fa-users"></i>
+                    <span>Make you happy every day</span>
+                </div>
+                <div class="signature">
+                    <p>Signed with love,</p>
+                    <h3>Your Loving Pintu ❤️</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Memory Gallery
+    <div class="memory-gallery" id="memory-gallery">
+        <div class="gallery-header">
+            <h2><i class="fas fa-images"></i> Our Year in Review</h2>
+            <button class="close-gallery" id="close-gallery">×</button>
+        </div>
+        <div class="gallery-grid">
+            <div class="memory-card" style="background: linear-gradient(135deg, #ff6b6b, #ff8e53);">
+                <i class="fas fa-calendar-heart"></i>
+                <h3>Special Dates</h3>
+                <p>Every moment with you was magical</p>
+            </div>
+            <div class="memory-card" style="background: linear-gradient(135deg, #4776E6, #8E54E9);">
+                <i class="fas fa-laugh-beam"></i>
+                <h3>Laughter</h3>
+                <p>Countless smiles and joyful times</p>
+            </div>
+            <div class="memory-card" style="background: linear-gradient(135deg, #00b09b, #96c93d);">
+                <i class="fas fa-hands-holding"></i>
+                <h3>Support</h3>
+                <p>Always there for each other</p>
+            </div>
+            <div class="memory-card" style="background: linear-gradient(135deg, #FF416C, #FF4B2B);">
+                <i class="fas fa-adventure"></i>
+                <h3>Adventures</h3>
+                <p>Exploring life together</p>
+            </div>
+        </div>
+        <div class="memory-summary">
+            <p><i class="fas fa-heart"></i> <strong>365 days</strong> of love and counting...</p>
+        </div>
+    </div> -->
+    
+    <!-- Main Container - Initially hidden -->
+    <div class="container" id="main-container" style="display: none;">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="header-content">
+                <h1 class="main-title">
+                    <span class="title-text">Happy New Year</span>
+                    <span class="title-heart">❤️</span>
+                </h1>
+                <p class="subtitle">My Dearest Gabi ❤️</p>
+                <div class="couple-emoji">👫💕</div>
+            </div>
+        </header>
+        
+        <!-- Love Letter -->
+        <section class="love-letter">
+            <div class="letter-container">
+                <div class="letter-header">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h2>A Love Letter for You</h2>
+                    <i class="fas fa-heart letter-heart"></i>
+                </div>
+                
+                <div class="letter-content">
+                    <p class="greeting">My Dearest Lavi,</p>
+                    
+                    <p>As the final moments of this year slip away, I find myself reflecting on all the beautiful moments we've shared. You have filled my days with laughter, my heart with love, and my life with meaning.</p>
+                    
+                    <p>This new year isn't just about changing dates—it's about growing together, dreaming together, and building a future filled with endless love and adventures. With you, every day feels like a celebration, and I can't wait to see what wonders this new chapter holds for us.</p>
+                    
+                    <p>You are my greatest blessing, my favorite hello, and my hardest goodbye. No matter what this new year brings, know that my love for you will only grow stronger with each passing day.</p>
+                    
+                    <div class="letter-promise">
+                        <i class="fas fa-handshake"></i>
+                        <p>I promise to cherish you, support you, and love you more with each sunrise we witness together.</p>
+                    </div>
+                    
+                    <div class="letter-closing">
+                        <p>Forever and always,</p>
+                        <div class="signature">
+                            <div class="signature-line"></div>
+                            <p class="signature-name">Your Loving Pintu ❤️</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="letter-footer">
+                    <div class="seal">
+                        <i class="fas fa-heart"></i>
+                        <span>Sealed with Love</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Photo Gallery -->
+        <section class="photo-section">
+            <div class="photo-container">
+                <div class="photo-frame">
+                    <img src="lavi1.jpg" 
+                         alt="Our beautiful moments together" 
+                         class="couple-photo">
+                    <div class="photo-caption">
+                        <i class="fas fa-heart"></i>
+                        <span>Our Beautiful Pic Together</span>
+                    </div>
+                </div>
+                <div class="photo-description">
+                    <h3><i class="fas fa-camera"></i> Our Story in Pictures</h3>
+                    <p>Every snapshot captures a moment of our story. This new year will bring countless more memories to add to our collection.</p>
+                    <div class="photo-stats">
+                        <div class="stat">
+                            <i class="fas fa-smile"></i>
+                            <span>Smiles Shared: <strong>∞</strong></span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-heart"></i>
+                            <span>Love Multiplied: <strong>∞</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Final Message -->
+        <section class="final-message">
+            <div class="message-container">
+                <div class="message-header">
+                    <i class="fas fa-sparkles"></i>
+                    <h2>To The Most Amazing Person</h2>
+                    <i class="fas fa-sparkles"></i>
+                </div>
+                
+                <div class="message-content">
+                    <p>As we step into this new year, I want you to know:</p>
+                    
+                    <div class="message-points">
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>You are loved beyond measure</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>You are my greatest adventure</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>You make every moment magical</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Our future together is bright</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-check-circle"></i>
+                            <span>You deserve all the happiness in the world, I will be there to give it to you every day</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-heart">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <p class="footer-text">Made with infinite love for the most special person in my life</p>
+                <p class="footer-year">Our Year • Our Love • Our Future</p>
+                <div class="footer-emoji">💖🎉🥂✨</div>
+                <div class="auto-message" id="auto-message">
+                    <i class="fas fa-comment-heart"></i>
+                    <span>New message every hour!</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Initial Countdown Section (Always visible until New Year) -->
+    <div class="initial-countdown" id="initial-countdown">
+        <div class="countdown-center">
+            <div class="countdown-intro">
+                <h1 class="countdown-main-title">Happy New Year, My Love! ❤️</h1>
+                <p class="countdown-intro-text">Waiting for the perfect moment to share my feelings...</p>
+                <div class="countdown-emoji">⏳💕🎊</div>
+            </div>
+            
+            <div class="countdown-display-initial">
+                <div class="countdown-item-initial">
+                    <div class="countdown-number-initial" id="initial-days">00</div>
+                    <div class="countdown-label-initial">Days</div>
+                </div>
+                <div class="countdown-divider-initial">:</div>
+                <div class="countdown-item-initial">
+                    <div class="countdown-number-initial" id="initial-hours">00</div>
+                    <div class="countdown-label-initial">Hours</div>
+                </div>
+                <div class="countdown-divider-initial">:</div>
+                <div class="countdown-item-initial">
+                    <div class="countdown-number-initial" id="initial-minutes">00</div>
+                    <div class="countdown-label-initial">Minutes</div>
+                </div>
+                <div class="countdown-divider-initial">:</div>
+                <div class="countdown-item-initial">
+                    <div class="countdown-number-initial" id="initial-seconds">00</div>
+                    <div class="countdown-label-initial">Seconds</div>
+                </div>
+            </div>
+            
+            <div class="countdown-progress-initial">
+                <div class="progress-bar-initial" id="progress-bar-initial"></div>
+                <div class="progress-text-initial" id="progress-text-initial">0% to My Message</div>
+            </div>
+            
+            <div class="countdown-instruction">
+                <i class="fas fa-lock"></i>
+                <p>My heartfelt message will unlock when the countdown reaches zero</p>
+                <div class="instruction-emoji">🔓💌❤️</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Audio Elements -->
+    <audio id="bg-music" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-loving-you-117.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="celebration-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-happy-new-year-horn-618.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="click-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="heartbeat-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-heartbeat-fast-958.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="unlock-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-phone-notification-253.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
