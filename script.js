@@ -1,4 +1,4 @@
-g// Mobile-Optimized New Year Surprise
+// Mobile-Optimized New Year Surprise
 document.addEventListener('DOMContentLoaded', function() {
     // ======================
     // TESTING FLAG - SET TO TRUE FOR IMMEDIATE TESTING
@@ -688,4 +688,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
 
