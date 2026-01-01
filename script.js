@@ -1,4 +1,4 @@
-// Mobile-Optimized New Year Surprise
+g// Mobile-Optimized New Year Surprise
 document.addEventListener('DOMContentLoaded', function() {
     // ======================
     // TESTING FLAG - SET TO TRUE FOR IMMEDIATE TESTING
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (celebrationTriggered) return;
         
         const now = new Date();
-        const currentYear = now.getFullYear();
+        const currentYear = 2025;
         const newYear = new Date(`January 1, ${currentYear + 1} 00:00:00`);
         const diff = newYear - now;
         
@@ -686,4 +686,5 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo(0, 0);
         }, 100);
     });
+
 });
