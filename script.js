@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function checkNewYearStatus() {
         const now = new Date();
-        const currentYear = now.getFullYear();
+        const currentYear = 2025;
         const newYear = new Date(`January 1, ${currentYear + 1} 00:00:00`);
         
         if (now >= newYear) {
@@ -688,3 +688,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
